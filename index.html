@@ -1,136 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>JIARI STORE | Boutique Officielle</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            color: #333;
-        }
-        header {
-            padding: 70px 20px;
-            text-align: center;
-            background: white;
-        }
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 15px;
-            color: #111;
-            letter-spacing: 2px;
-        }
-        header p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.6;
-        }
-        .container {
-            padding: 50px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
-        }
-        .card {
-            background: white;
-            border-radius: 18px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-        }
-        .card img {
-            width: 100%;
-            border-radius: 15px;
-        }
-        .card h3 {
-            margin: 15px 0 10px;
-            font-size: 20px;
-        }
-        .card p {
-            font-size: 15px;
-        }
-        .buttons {
-            text-align: center;
-            margin-top: 50px;
-        }
-        .btn {
-            display: inline-block;
-            margin: 12px;
-            padding: 16px 35px;
-            border-radius: 40px;
-            text-decoration: none;
-            color: white;
-            font-size: 17px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            opacity: 0.85;
-        }
-        .whatsapp {
-            background: #25D366;
-        }
-        .instagram {
-            background: linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
-        }
-        footer {
-            text-align: center;
-            padding: 25px;
-            background: white;
-            margin-top: 60px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>JIARI STORE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>JIARI STORE</h1>
-    <p>
-        مرحباً بكم في <strong>JIARI STORE</strong>  
-        وجهتكم الموثوقة للمافنات العصرية للولاد والبنات.  
-        جودة عالية، تصاميم أنيقة، وثقة تدوم.
-    </p>
+  <h1>JIARI STORE</h1>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#categories">Catégories</a>
+    <a href="#produits">Produits</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<div class="container">
-    <div class="products">
-        <div class="card">
-            <img src="https://via.placeholder.com/400x400" alt="Produit">
-            <h3>Mafanna Moderne</h3>
-            <p>تصميم عصري يناسب جميع الأذواق</p>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/400x400" alt="Produit">
-            <h3>Mafanna Classique</h3>
-            <p>أناقة بسيطة وجودة ممتازة</p>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/400x400" alt="Produit">
-            <h3>Mafanna Enfant</h3>
-            <p>راحة وأمان للأطفال</p>
-        </div>
-    </div>
+<section class="hero">
+  <h2>Mode Homme, Femme & Maison</h2>
+  <p>Style • Qualité • Prix raisonnables</p>
+</section>
 
-    <div class="buttons">
-        <a class="btn whatsapp" href="https://wa.me/212684705186" target="_blank">
-            تواصل معنا عبر WhatsApp
-        </a>
-        <a class="btn instagram" href="https://www.instagram.com/jiari_store" target="_blank">
-            Instagram JIARI STORE
-        </a>
-    </div>
-</div>
+<section id="categories" class="categories">
+  <div>👔 Homme</div>
+  <div>👗 Femme</div>
+  <div>🏠 Maison</div>
+</section>
 
-<footer>
-    © 2026 JIARI STORE – Boutique Officielle
+<section id="produits" class="produits">
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Veste Homme</h3>
+    <p>299 DH</p>
+    <a href="https://wa.me/212684705186">Commander</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Robe Femme</h3>
+    <p>249 DH</p>
+    <a href="https://wa.me/212684705186">Commander</a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300" alt="">
+    <h3>Décoration Maison</h3>
+    <p>199 DH</p>
+    <a href="https://wa.me/212684705186">Commander</a>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>📞 WhatsApp : 0684705186</p>
+  <p>📷 Instagram : JIARI STORE</p>
+  <p>© 2026 JIARI STORE</p>
 </footer>
 
 </body>
