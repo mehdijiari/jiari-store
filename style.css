@@ -77,11 +77,9 @@ button:hover{
 }
 
 /* Footer */
-footer{
-    margin:40px 0 20px;
-    color:#777;
-    font-size:14px;
-}
+<div class="footer">
+  © JIARI STORE 2025
+</div>
 
 /* Social buttons */
 .social-fixed{
