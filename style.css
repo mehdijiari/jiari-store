@@ -1,22 +1,23 @@
+:root{
+    --gold:#d4af37;
+    --black:#0b0b0b;
+}
+
 body{
     margin:0;
-    font-family:Tahoma, Arial;
+    font-family: Tahoma, Arial;
     background:#f5f6f8;
     text-align:center;
 }
 
 .header{
-    background:#0d6efd;
-    color:white;
+    background:var(--black);
+    color:var(--gold);
     padding:30px 10px;
 }
 
-.products{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin:50px 20px;
-    flex-wrap:wrap;
+.header p{
+    color:#ddd;
 }
 
 .card{
@@ -27,52 +28,23 @@ body{
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-.card img{
-    width:120px;
-    margin-bottom:15px;
-}
-
 .price{
-    color:#0d6efd;
+    color:var(--gold);
     font-size:20px;
     margin:15px 0;
     font-weight:bold;
 }
 
 button{
-    background:#0d6efd;
-    color:white;
-    border:none;
+    background:var(--black);
+    color:var(--gold);
+    border:1px solid var(--gold);
     padding:10px 20px;
     border-radius:6px;
     cursor:pointer;
 }
 
 button:hover{
-    background:#084298;
-}
-
-/* FOOTER لتحت */
-footer{
-    margin:40px 0 20px;
-    color:#777;
-    font-size:14px;
-}
-
-/* أزرار التواصل */
-.social-fixed{
-    position:fixed;
-    left:10px;
-    top:50%;
-    transform:translateY(-50%);
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    z-index:9999;
-}
-
-.social-fixed img{
-    width:32px;
-    height:32px;
-    border-radius:50%;
+    background:var(--gold);
+    color:var(--black);
 }
