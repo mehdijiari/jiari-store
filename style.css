@@ -104,3 +104,10 @@ footer{
 .social-fixed img:hover{
     transform:scale(1.15);
 }
+.footer{
+  text-align: center;   /* وسط */
+  margin-top: 40px;
+  padding-bottom: 20px;
+  color: #777;
+  font-size: 14px;
+}
