@@ -1,12 +1,12 @@
-/* ===== ROOT COLORS ===== */
+/* ===== COLORS ===== */
 :root{
-    --gold:#d4af37;
-    --gold-soft:#e6c86e;
-    --black:#0b0b0b;
-    --dark:#141414;
+    --blue:#1e3a8a;        /* أزرق هادئ */
+    --blue-soft:#e8eeff;   /* أزرق فاتح للخلفيات */
+    --orange:#f97316;      /* برتقالي واضح */
+    --dark:#1f2933;
+    --gray:#6b7280;
+    --light:#f5f6fa;
     --white:#ffffff;
-    --gray:#666;
-    --bg:#f3f3f3;
 }
 
 /* ===== GLOBAL ===== */
@@ -17,28 +17,27 @@
 body{
     margin:0;
     font-family:Tahoma, Arial, sans-serif;
-    background:linear-gradient(180deg,#111,#1c1c1c);
-    color:#222;
+    background:var(--light);
     text-align:center;
+    color:var(--dark);
 }
 
 /* ===== HEADER ===== */
 .header{
-    background:linear-gradient(135deg,#000,#222);
-    color:var(--gold);
+    background:linear-gradient(135deg, var(--blue), #0f2557);
+    color:white;
     padding:35px 15px;
-    border-bottom:3px solid var(--gold);
 }
 
 .header h1{
     margin:0;
     font-size:34px;
-    letter-spacing:2px;
+    letter-spacing:1px;
 }
 
 .header p{
     margin-top:10px;
-    color:#ddd;
+    color:#e5e7eb;
     font-size:15px;
 }
 
@@ -46,7 +45,7 @@ body{
 .products{
     display:flex;
     justify-content:center;
-    gap:35px;
+    gap:30px;
     margin:60px 20px;
     flex-wrap:wrap;
 }
@@ -55,54 +54,58 @@ body{
 .card{
     background:var(--white);
     width:280px;
-    padding:25px 20px;
+    padding:22px 20px;
     border-radius:14px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.25);
-    transition:0.35s;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+    transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 40px rgba(0,0,0,0.35);
+    transform:translateY(-6px);
+    box-shadow:0 14px 35px rgba(0,0,0,0.18);
 }
 
 .card img{
-    width:140px;
-    margin-bottom:18px;
+    width:135px;
+    margin-bottom:16px;
 }
 
+/* TITLE */
 .card h3{
     margin:10px 0;
-    color:#111;
+    color:var(--blue);
+    font-size:18px;
 }
 
+/* DESCRIPTION */
 .card p{
-    color:var(--gray);
+    color:var(--gray);   /* لون مختلف عن الثمن */
     font-size:14px;
+    margin-bottom:12px;
 }
 
-/* ===== PRICE ===== */
+/* PRICE */
 .price{
-    color:var(--gold);
+    color:var(--orange);   /* واضح وبارز */
     font-size:22px;
-    margin:18px 0;
+    margin:15px 0;
     font-weight:bold;
 }
 
-/* ===== BUTTON ===== */
+/* BUTTON */
 button{
-    background:linear-gradient(135deg,#000,#222);
-    color:var(--gold);
-    border:1px solid var(--gold);
-    padding:11px 26px;
-    border-radius:30px;
+    background:var(--blue);
+    color:white;
+    border:none;
+    padding:11px 24px;
+    border-radius:25px;
     cursor:pointer;
     font-size:14px;
     transition:0.3s;
 }
 
 button:hover{
-    background:var(--gold);
+    background:var(--orange);
     color:#000;
 }
 
@@ -114,7 +117,7 @@ button:hover{
     transform:translateY(-50%);
     display:flex;
     flex-direction:column;
-    gap:12px;
+    gap:10px;
     z-index:9999;
 }
 
@@ -124,18 +127,18 @@ button:hover{
     border-radius:50%;
     background:white;
     padding:6px;
-    box-shadow:0 6px 15px rgba(0,0,0,0.6);
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);
     transition:0.3s;
 }
 
 .social-fixed img:hover{
-    transform:scale(1.18);
-    background:var(--gold);
+    transform:scale(1.15);
+    background:var(--orange);
 }
 
 /* ===== FOOTER ===== */
 footer{
-    margin:50px 0 25px;
-    color:#aaa;
+    margin:40px 0 20px;
+    color:var(--gray);
     font-size:14px;
 }
