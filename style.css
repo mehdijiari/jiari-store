@@ -1,15 +1,16 @@
 :root{
     --gold:#d4af37;
-    --black:#0b0b0b;
+    --black:#000000;
 }
 
 body{
     margin:0;
-    font-family: Tahoma, Arial;
+    font-family:Tahoma, Arial;
     background:#f5f6f8;
     text-align:center;
 }
 
+/* HEADER */
 .header{
     background:var(--black);
     color:var(--gold);
@@ -20,12 +21,26 @@ body{
     color:#ddd;
 }
 
+/* PRODUCTS */
+.products{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin:50px 20px;
+    flex-wrap:wrap;
+}
+
 .card{
     background:white;
     width:280px;
     padding:20px;
     border-radius:10px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:120px;
+    margin-bottom:15px;
 }
 
 .price{
@@ -35,6 +50,7 @@ body{
     font-weight:bold;
 }
 
+/* BUTTON */
 button{
     background:var(--black);
     color:var(--gold);
@@ -47,4 +63,29 @@ button{
 button:hover{
     background:var(--gold);
     color:var(--black);
+}
+
+/* SOCIAL */
+.social-fixed{
+    position:fixed;
+    left:8px;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    z-index:9999;
+}
+
+.social-fixed img{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+}
+
+/* FOOTER */
+footer{
+    margin:40px 0 20px;
+    color:#777;
+    font-size:14px;
 }
