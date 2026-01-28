@@ -3,96 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>JIARI STORE</title>
-
-<style>
-body{
-    margin:0;
-    font-family: Tahoma, Arial;
-    background:#f5f6f8;
-    text-align:center;
-}
-.header{
-    background:#0d6efd;
-    color:white;
-    padding:30px 10px;
-}
-.header h1{
-    margin:0;
-    font-size:32px;
-}
-.header p{
-    margin-top:8px;
-    opacity:0.9;
-}
-.products{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin:50px 20px;
-    flex-wrap:wrap;
-}
-.card{
-    background:white;
-    width:280px;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-.card img{
-    width:120px;
-    margin-bottom:15px;
-}
-.card h3{
-    margin:10px 0;
-}
-.card p{
-    color:#555;
-    font-size:14px;
-}
-.price{
-    color:#0d6efd;
-    font-size:20px;
-    margin:15px 0;
-    font-weight:bold;
-}
-button{
-    background:#0d6efd;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:6px;
-    cursor:pointer;
-}
-button:hover{
-    background:#084298;
-}
-footer{
-    margin:40px 0 20px;
-    color:#777;
-    font-size:14px;
-}
-
-/* أزرار التواصل */
-.social-fixed{
-    position:fixed;
-    left:8px;
-    top:50%;
-    transform:translateY(-50%);
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-    z-index:9999;
-}
-.social-fixed img{
-    width:32px;
-    height:32px;
-    border-radius:50%;
-    box-shadow:0 2px 5px rgba(0,0,0,0.25);
-}
-.social-fixed img:hover{
-    transform:scale(1.12);
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -105,7 +16,7 @@ footer{
 <div class="products">
 
     <div class="card">
-     <img src="images/images.jpeg" alt="image">
+        <img src="images/images.jpeg" alt="">
         <h3>ساعة يدوية نسائية</h3>
         <p>ساعة يدوية نسائية فخمة</p>
         <div class="price">99 درهم</div>
@@ -113,7 +24,7 @@ footer{
     </div>
 
     <div class="card">
-         <img src="images/khdar.jpeg" alt="image">
+        <img src="images/khdar.jpeg" alt="">
         <h3>ساعة يدوية رجالية</h3>
         <p>ساعة يدوية رجالية للفخامة و الهبة</p>
         <div class="price">220 درهم</div>
@@ -121,7 +32,7 @@ footer{
     </div>
 
     <div class="card">
-         <img src="images/jald.jpeg" alt="image">
+        <img src="images/jald.jpeg" alt="">
         <h3>ساعة يدوية رجالية</h3>
         <p>ساعة يدوية رجالية للفخامة و الهبة</p>
         <div class="price">220 درهم</div>
@@ -129,37 +40,28 @@ footer{
     </div>
 
     <div class="card">
-        <img src="images/black.jpeg" alt="image">
+        <img src="images/black.jpeg" alt="">
         <h3>ساعة يدوية رجالية</h3>
         <p>ساعة يدوية رجالية للفخامة و الهبة</p>
         <div class="price">220 درهم</div>
         <button>أضف للسلة</button>
     </div>
 
-    <div class="card">
-        <img src="images/gucci.jpeg" alt="image">
-        <h3>ساعة يدوية رجالية</h3>
-        <p>ساعة يدوية رجالية للفخامة و الهبة</p>
-        <div class="price">220 درهم</div>
-        <button>أضف للسلة</button>
-    </div>
+</div> <!-- تسدات products -->
 
-    <div class="card">
-        <img src="images/sacnoire.jpeg" alt="image">
-        <h3>ساعة يدوية رجالية</h3>
-        <p>ساعة يدوية رجالية للفخامة و الهبة</p>
-        <div class="price">220 درهم</div>
-        <button>أضف للسلة</button>
-    </div>
-<!-- أزرار WhatsApp و Instagram -->
+<!-- أزرار التواصل -->
 <div class="social-fixed">
     <a href="https://wa.me/212684705186" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
     </a>
     <a href="https://www.instagram.com/jiari_store" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
     </a>
 </div>
-    
+
+<footer>
+    © JIARI STORE 2025
+</footer>
+
 </body>
 </html>
