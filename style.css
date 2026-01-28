@@ -1,95 +1,103 @@
+/* ===== ROOT COLORS ===== */
 :root{
     --gold:#d4af37;
-    --black:#0e0e0e;
-    --black-soft:#141414;
-    --text:#eaeaea;
-    --text-soft:#bbbbbb;
+    --gold-soft:#e6c86e;
+    --black:#0b0b0b;
+    --dark:#141414;
+    --white:#ffffff;
+    --gray:#666;
+    --bg:#f3f3f3;
 }
 
-/* BODY */
+/* ===== GLOBAL ===== */
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    font-family:Tahoma, Arial;
-    background:var(--black);
+    font-family:Tahoma, Arial, sans-serif;
+    background:linear-gradient(180deg,#111,#1c1c1c);
+    color:#222;
     text-align:center;
-    color:var(--text);
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 .header{
-    background:linear-gradient(135deg, #000, #1a1a1a);
+    background:linear-gradient(135deg,#000,#222);
     color:var(--gold);
-    padding:30px 10px;
-    border-bottom:1px solid var(--gold);
+    padding:35px 15px;
+    border-bottom:3px solid var(--gold);
 }
 
 .header h1{
     margin:0;
-    font-size:32px;
+    font-size:34px;
     letter-spacing:2px;
 }
 
 .header p{
-    margin-top:8px;
-    color:var(--text-soft);
+    margin-top:10px;
+    color:#ddd;
+    font-size:15px;
 }
 
-/* PRODUCTS */
+/* ===== PRODUCTS ===== */
 .products{
     display:flex;
     justify-content:center;
-    gap:30px;
-    margin:50px 20px;
+    gap:35px;
+    margin:60px 20px;
     flex-wrap:wrap;
 }
 
-/* CARD */
+/* ===== CARD ===== */
 .card{
-    background:var(--black-soft);
+    background:var(--white);
     width:280px;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 6px 20px rgba(212,175,55,0.15);
-    transition:transform 0.3s, box-shadow 0.3s;
+    padding:25px 20px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    transition:0.35s;
 }
 
 .card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 10px 30px rgba(212,175,55,0.35);
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.35);
 }
 
 .card img{
-    width:130px;
-    margin-bottom:15px;
-    border-radius:8px;
+    width:140px;
+    margin-bottom:18px;
 }
 
 .card h3{
     margin:10px 0;
-    color:var(--text);
+    color:#111;
 }
 
 .card p{
-    color:var(--text-soft);
+    color:var(--gray);
     font-size:14px;
 }
 
-/* PRICE */
+/* ===== PRICE ===== */
 .price{
     color:var(--gold);
-    font-size:20px;
-    margin:15px 0;
+    font-size:22px;
+    margin:18px 0;
     font-weight:bold;
 }
 
-/* BUTTON */
+/* ===== BUTTON ===== */
 button{
-    background:transparent;
+    background:linear-gradient(135deg,#000,#222);
     color:var(--gold);
     border:1px solid var(--gold);
-    padding:10px 22px;
-    border-radius:8px;
+    padding:11px 26px;
+    border-radius:30px;
     cursor:pointer;
+    font-size:14px;
     transition:0.3s;
 }
 
@@ -98,7 +106,7 @@ button:hover{
     color:#000;
 }
 
-/* SOCIAL FIXED */
+/* ===== SOCIAL FIXED ===== */
 .social-fixed{
     position:fixed;
     left:10px;
@@ -106,26 +114,28 @@ button:hover{
     transform:translateY(-50%);
     display:flex;
     flex-direction:column;
-    gap:10px;
+    gap:12px;
     z-index:9999;
 }
 
 .social-fixed img{
-    width:34px;
-    height:34px;
+    width:36px;
+    height:36px;
     border-radius:50%;
-    box-shadow:0 3px 8px rgba(0,0,0,0.4);
+    background:white;
+    padding:6px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.6);
     transition:0.3s;
 }
 
 .social-fixed img:hover{
-    transform:scale(1.15);
+    transform:scale(1.18);
+    background:var(--gold);
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer{
-    margin:40px 0 20px;
-    color:var(--gold);
+    margin:50px 0 25px;
+    color:#aaa;
     font-size:14px;
-    opacity:0.8;
 }
