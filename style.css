@@ -1,27 +1,16 @@
 body{
     margin:0;
-    font-family: Tahoma, Arial;
+    font-family:Tahoma, Arial;
     background:#f5f6f8;
     text-align:center;
-    direction: rtl;
 }
 
-/* Header */
 .header{
     background:#0d6efd;
     color:white;
     padding:30px 10px;
 }
-.header h1{
-    margin:0;
-    font-size:32px;
-}
-.header p{
-    margin-top:8px;
-    opacity:0.9;
-}
 
-/* Products */
 .products{
     display:flex;
     justify-content:center;
@@ -30,31 +19,19 @@ body{
     flex-wrap:wrap;
 }
 
-/* Card */
 .card{
     background:white;
     width:280px;
     padding:20px;
-    border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-.card:hover{
-    transform:translateY(-6px);
-}
-.card img{
-    width:130px;
-    margin-bottom:15px;
-}
-.card h3{
-    margin:10px 0;
-}
-.card p{
-    color:#555;
-    font-size:14px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Price */
+.card img{
+    width:120px;
+    margin-bottom:15px;
+}
+
 .price{
     color:#0d6efd;
     font-size:20px;
@@ -62,26 +39,27 @@ body{
     font-weight:bold;
 }
 
-/* Button */
 button{
     background:#0d6efd;
     color:white;
     border:none;
-    padding:10px 22px;
+    padding:10px 20px;
     border-radius:6px;
     cursor:pointer;
-    transition:0.3s;
 }
+
 button:hover{
     background:#084298;
 }
 
-/* Footer */
-<div class="footer">
-  © JIARI STORE 2025
-</div>
+/* FOOTER لتحت */
+footer{
+    margin:40px 0 20px;
+    color:#777;
+    font-size:14px;
+}
 
-/* Social buttons */
+/* أزرار التواصل */
 .social-fixed{
     position:fixed;
     left:10px;
@@ -92,17 +70,9 @@ button:hover{
     gap:10px;
     z-index:9999;
 }
+
 .social-fixed img{
-    width:34px;
-    height:34px;
+    width:32px;
+    height:32px;
     border-radius:50%;
-    box-shadow:0 2px 6px rgba(0,0,0,0.3);
-    transition:0.3s;
-}
-.social-fixed img:hover{
-    transform:scale(1.15);
-}
-text-align: left;
-padding-left: 20px;
-  font-size: 14px;
 }
