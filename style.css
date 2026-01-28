@@ -1,27 +1,37 @@
-body{
-    background:red !important;
-}
 :root{
     --gold:#d4af37;
-    --black:#000000;
+    --black:#0e0e0e;
+    --black-soft:#141414;
+    --text:#eaeaea;
+    --text-soft:#bbbbbb;
 }
 
+/* BODY */
 body{
     margin:0;
     font-family:Tahoma, Arial;
-    background:#f5f6f8;
+    background:var(--black);
     text-align:center;
+    color:var(--text);
 }
 
 /* HEADER */
 .header{
-    background:var(--black);
+    background:linear-gradient(135deg, #000, #1a1a1a);
     color:var(--gold);
     padding:30px 10px;
+    border-bottom:1px solid var(--gold);
+}
+
+.header h1{
+    margin:0;
+    font-size:32px;
+    letter-spacing:2px;
 }
 
 .header p{
-    color:#ddd;
+    margin-top:8px;
+    color:var(--text-soft);
 }
 
 /* PRODUCTS */
@@ -33,19 +43,38 @@ body{
     flex-wrap:wrap;
 }
 
+/* CARD */
 .card{
-    background:white;
+    background:var(--black-soft);
     width:280px;
     padding:20px;
-    border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    border-radius:12px;
+    box-shadow:0 6px 20px rgba(212,175,55,0.15);
+    transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 30px rgba(212,175,55,0.35);
 }
 
 .card img{
-    width:120px;
+    width:130px;
     margin-bottom:15px;
+    border-radius:8px;
 }
 
+.card h3{
+    margin:10px 0;
+    color:var(--text);
+}
+
+.card p{
+    color:var(--text-soft);
+    font-size:14px;
+}
+
+/* PRICE */
 .price{
     color:var(--gold);
     font-size:20px;
@@ -55,40 +84,48 @@ body{
 
 /* BUTTON */
 button{
-    background:var(--black);
+    background:transparent;
     color:var(--gold);
     border:1px solid var(--gold);
-    padding:10px 20px;
-    border-radius:6px;
+    padding:10px 22px;
+    border-radius:8px;
     cursor:pointer;
+    transition:0.3s;
 }
 
 button:hover{
     background:var(--gold);
-    color:var(--black);
+    color:#000;
 }
 
-/* SOCIAL */
+/* SOCIAL FIXED */
 .social-fixed{
     position:fixed;
-    left:8px;
+    left:10px;
     top:50%;
     transform:translateY(-50%);
     display:flex;
     flex-direction:column;
-    gap:8px;
+    gap:10px;
     z-index:9999;
 }
 
 .social-fixed img{
-    width:32px;
-    height:32px;
+    width:34px;
+    height:34px;
     border-radius:50%;
+    box-shadow:0 3px 8px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.social-fixed img:hover{
+    transform:scale(1.15);
 }
 
 /* FOOTER */
 footer{
     margin:40px 0 20px;
-    color:#777;
+    color:var(--gold);
     font-size:14px;
+    opacity:0.8;
 }
