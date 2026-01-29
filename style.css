@@ -1,8 +1,63 @@
-<div class="header-right">
-    <div class="icons">
-      <a href="https://www.instagram.com/jiari_store" target="_blank">📸</a>
-      <a href="#" target="_blank">📘</a>
-      <a href="#" class="cart">🛒</a>
-    </div>
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #ffffff;
+  direction: rtl;
+  border-bottom: 1px solid #eee;
+}
 
-saghar liya l azrar dial whatsapp o dial instagram
+/* ===== LEFT ===== */
+.header-left h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header-left p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ===== RIGHT ===== */
+.header-right {
+  text-align: left;
+}
+
+/* ICONS */
+.header-right .icons {
+  display: flex;
+  gap: 8px;
+}
+
+.header-right .icons a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* CONTACT TEXT */
+.contact-msg {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #444;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-right {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .header-right .icons {
+    justify-content: center;
+  }
+}
