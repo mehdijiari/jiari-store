@@ -1,17 +1,22 @@
-<div class="header">
-  <div class="header-left">
-    <h1 class="logo-3d">JIARI STORE</h1>
-    <p>أفضل العروض لأكسيسوارات الرجال و النساء</p>
-  </div>
+.header-right .icons {
+  display: flex;
+  gap: 8px;
+}
 
-  <div class="header-right">
-    <div class="icons">
-      <a href="https://www.instagram.com/jiari_store" target="_blank">📸</a>
-      <a href="#" target="_blank">📘</a>
-      <a href="#" class="cart">🛒</a>
-    </div>
-    <p class="contact-msg">
-      راسلونا عبر الضغط على زر واتساب أو أنستغرام
-    </p>
-  </div>
-</div>
+.header-right .icons a {
+  font-size: 16px;      /* حجم الإيقونة */
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  transition: 0.3s ease;
+}
+
+.header-right .icons a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.1);
+}
